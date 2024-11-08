@@ -3,4 +3,5 @@ sudo apt update -y
 apt install openssh-server -y
 apt install curl -y
 apt install net-tools -y
+apt install nmap
 apt upgrade -y
