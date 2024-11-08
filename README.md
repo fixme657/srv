@@ -1,1 +1,2 @@
-# srv servers bash for new ubuntu server
+# srv 
+servers bash script's for new ubuntu server
