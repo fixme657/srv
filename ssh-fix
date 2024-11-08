@@ -1,0 +1,7 @@
+container root ssh login fix
+
+nano /etc/ssh/sshd_config
+Change
+PermitRootLogin without-password
+to
+PermitRootLogin yes
