@@ -10,7 +10,7 @@ sudo apt-get install -y \
     net-tools \
     nmap \
     git \
-    wget
+    wget \
 
 # Check the status of installation
 if [ $? -eq 0 ]; then
