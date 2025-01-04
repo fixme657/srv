@@ -11,7 +11,7 @@ sudo apt-get install -y \
     nmap \
     git \
     wget \
-    neofetch
+    neofetch \
 
 # Check the status of installation
 if [ $? -eq 0 ]; then
