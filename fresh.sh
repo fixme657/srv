@@ -12,7 +12,7 @@ sudo apt-get install -y \
     git \
     wget \
     neofetch \
-
+    echo "neofetch" >> EOF >> ~/.bashrc
 # Check the status of installation
 if [ $? -eq 0 ]; then
     echo "All packages installed successfully."
