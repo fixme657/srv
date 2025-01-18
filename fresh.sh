@@ -8,10 +8,11 @@ sudo apt-get install -y \
     openssh-server \
     curl \
     net-tools \
+     neofetch \
     nmap \
     git \
     wget \
-    neofetch \
+    
     echo neofetch >> ~/.bashrc && cat ~/.bashrc
 # Check the status of installation
 if [ $? -eq 0 ]; then
