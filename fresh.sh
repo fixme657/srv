@@ -12,6 +12,7 @@ sudo apt-get install -y \
     nmap \
     git \
     wget \
+    network-manager \
     
     echo neofetch >> ~/.bashrc && cat ~/.bashrc
 # Check the status of installation
