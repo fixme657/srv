@@ -13,11 +13,13 @@ sudo apt-get install -y \
     git \
     wget \
     network-manager \
-    
+    neofetch \
     echo neofetch >> ~/.bashrc && cat ~/.bashrc
 # Check the status of installation
 if [ $? -eq 0 ]; then
     echo "All packages installed successfully."
+fi
+neofetch
 # Function to get local IP
 echo "find your ip"
 get_local_ip() {
