@@ -36,7 +36,4 @@ get_wan_ip() {
 # Display the IPs
 get_local_ip
 get_wan_ip
-else
-    echo "Error occurred during package installation." >&2
-    exit 1
 fi
