@@ -1,4 +1,4 @@
 #!bin/bash
-apt install cockpit /y
+apt install cockpit 
 systemctl start cockpit
 systemctl enable cockpit.socket  
