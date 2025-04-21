@@ -8,20 +8,26 @@ sudo apt-get install -y \
     openssh-server \
     curl \
     net-tools \
-     neofetch \
+    neofetch \
     nmap \
     git \
     wget \
-    network-manager \
-    neofetch \
-    echo neofetch >> ~/.bashrc && cat ~/.bashrc
-# Check the status of installation
+    network-manager
+
+# Add neofetch to .bashrc if not already present
+if ! grep -q "neofetch" ~/.bashrc; then
+    echo "neofetch" >> ~/.bashrc
+fi
+
+# Check the status of the installation
 if [ $? -eq 0 ]; then
     echo "All packages installed successfully."
+    neofetch
+else
+    echo "There was an error installing the packages."
 fi
-neofetch
+
 # Function to get local IP
-echo "find your ip"
 get_local_ip() {
     local_ip=$(hostname -I | awk '{print $1}')
     echo "Local IP: $local_ip"
@@ -34,6 +40,6 @@ get_wan_ip() {
 }
 
 # Display the IPs
+echo "Finding your IP addresses..."
 get_local_ip
 get_wan_ip
-fi
